@@ -13,6 +13,8 @@
 * [Procedimento de Restauração](#procedimento-de-restauração)
 * [Estado Atual do Projeto](#estado-atual-do-projeto)
 * [Próximos Passos](#próximos-passos)
+* [Observações](#observações)
+* [Créditos](#créditos)
 
 ---
 
@@ -68,7 +70,7 @@ Atualmente a equipe possui dez pendrives destinados às seguintes funções:
 | Armazenamento  | Armazena as imagens criadas pelo Clonezilla |
 | Office         | Instalação do Microsoft Office              |
 
-Cada pendrive possui uma função específica e deve permanecer organizado para evitar erros durante as instalações.
+Cada pendrive possui uma finalidade específica e deve permanecer organizado para evitar erros durante o processo de instalação ou restauração.
 
 ---
 
@@ -78,9 +80,9 @@ Até o momento, o procedimento foi aplicado em três notebooks do seguinte model
 
 **HP 240 G7**
 
-Todos possuem a mesma configuração de hardware, permitindo utilizar uma única imagem para restaurar qualquer equipamento desse modelo.
+Todos os equipamentos possuem a mesma configuração de hardware, permitindo utilizar uma única imagem para restaurar qualquer máquina desse modelo.
 
-Caso futuramente sejam adicionados computadores com hardware diferente, uma nova imagem deverá ser criada especificamente para aquele modelo.
+Caso novos computadores com hardware diferente sejam incorporados ao projeto, será necessário criar uma imagem específica para cada novo modelo.
 
 ---
 
@@ -88,19 +90,19 @@ Caso futuramente sejam adicionados computadores com hardware diferente, uma nova
 
 Foi escolhido um notebook HP 240 G7 para servir como máquina de referência.
 
-Todo o processo abaixo foi realizado apenas nessa máquina.
+Todo o procedimento descrito abaixo foi executado apenas nessa máquina.
 
 ## 1. Instalação do sistema operacional
 
-Foi realizada uma instalação limpa do Windows 10.
+Foi realizada uma instalação limpa do Windows 10 utilizando um dos pendrives de instalação disponíveis.
 
 ---
 
 ## 2. Configuração inicial
 
-Após a instalação do Windows foram realizadas as configurações iniciais necessárias para utilização do equipamento.
+Após a instalação do Windows, foram realizadas as configurações iniciais necessárias para utilização da máquina.
 
-No momento, a máquina permanece sem senha de acesso, facilitando o processo de implantação.
+Atualmente o equipamento permanece sem senha de acesso, facilitando o processo de implantação.
 
 ---
 
@@ -108,7 +110,7 @@ No momento, a máquina permanece sem senha de acesso, facilitando o processo de 
 
 Os softwares utilizados pela escola foram instalados utilizando o Ninite.
 
-Essa ferramenta permite instalar diversos programas automaticamente, reduzindo o tempo de configuração.
+Essa ferramenta permite instalar diversos programas automaticamente, reduzindo o tempo necessário para preparação da máquina.
 
 ---
 
@@ -116,17 +118,17 @@ Essa ferramenta permite instalar diversos programas automaticamente, reduzindo o
 
 Após a instalação dos programas, todos os drivers foram instalados utilizando o DriverHub.
 
-Antes de prosseguir para a próxima etapa, foi verificado que nenhum dispositivo permanecia com drivers pendentes.
+Antes de prosseguir, foi verificado que nenhum dispositivo permanecia com drivers pendentes.
 
 ---
 
 ## 5. Limpeza e otimização
 
-Com o sistema totalmente funcional, foi executado o Windows10Debloater.
+Após confirmar que o sistema estava totalmente funcional, foi executado o Windows10Debloater.
 
-Essa etapa remove aplicativos desnecessários instalados junto ao Windows (bloatware), reduz processos em segundo plano e melhora o desempenho geral do sistema.
+Essa ferramenta remove aplicativos desnecessários instalados juntamente com o Windows (bloatware), reduz processos em segundo plano e melhora o desempenho geral do sistema.
 
-A limpeza somente deve ser realizada após confirmar que todos os drivers e programas necessários estão funcionando corretamente.
+Essa etapa deve ser realizada apenas após confirmar que todos os drivers e programas necessários estão funcionando corretamente.
 
 ---
 
@@ -138,15 +140,15 @@ Essa imagem foi armazenada no pendrive destinado exclusivamente ao armazenamento
 
 A partir desse momento, essa imagem passa a ser considerada a instalação padrão para notebooks HP 240 G7.
 
-Sempre que forem realizadas alterações significativas na configuração da máquina modelo, recomenda-se gerar uma nova imagem para manter o padrão atualizado.
+Sempre que forem realizadas alterações importantes na configuração da máquina modelo, recomenda-se gerar uma nova imagem para manter o padrão atualizado.
 
 ---
 
 # Backup das Imagens
 
-Como medida de segurança, todas as imagens armazenadas no pendrive de armazenamento também possuem uma cópia no servidor da escola.
+Como medida de segurança, todas as imagens armazenadas no pendrive de armazenamento também possuem uma cópia de segurança no servidor da escola.
 
-Caso o pendrive de armazenamento seja perdido, danificado ou apresente qualquer outro problema, **não é necessário recriar as imagens**, desde que a cópia existente no servidor esteja íntegra.
+Caso o pendrive de armazenamento seja perdido, danificado ou apresente qualquer tipo de falha, **não será necessário recriar toda a imagem**, desde que a cópia existente no servidor permaneça íntegra.
 
 Nessa situação, a imagem poderá ser recuperada diretamente pela rede e copiada novamente para um pendrive de armazenamento ou utilizada conforme a infraestrutura disponível.
 
@@ -163,13 +165,13 @@ Durante esse procedimento foi utilizada a imagem armazenada no pendrive de armaz
 Ao término da restauração, todas as máquinas passaram a possuir exatamente a mesma configuração da máquina modelo, incluindo:
 
 * sistema operacional;
-* drivers;
+* drivers instalados;
 * programas instalados;
 * configurações do Windows;
 * otimizações realizadas;
-* remoção de bloatware.
+* remoção de aplicativos desnecessários.
 
-Isso garante que todos os computadores apresentem o mesmo comportamento e reduz problemas decorrentes de configurações diferentes.
+Esse procedimento garante que todos os computadores permaneçam padronizados e reduz significativamente o tempo necessário para preparar novas máquinas.
 
 ---
 
@@ -179,14 +181,15 @@ Sempre que um notebook HP 240 G7 precisar ser restaurado, seguir o procedimento 
 
 1. Conectar o pendrive do Clonezilla.
 2. Conectar o pendrive de armazenamento contendo a imagem.
-3. Inicializar o computador pelo pendrive do Clonezilla.
+3. Inicializar o computador utilizando o pendrive do Clonezilla.
 4. Selecionar a opção de restauração da imagem.
 5. Escolher a imagem correspondente ao HP 240 G7.
-6. Confirmar cuidadosamente o disco de destino.
-7. Aguardar o término da restauração.
-8. Reiniciar o computador.
-9. Confirmar que o Windows inicializa normalmente.
-10. Verificar o funcionamento dos drivers e dos programas instalados.
+6. Confirmar cuidadosamente o disco de destino para evitar sobrescrever outro dispositivo.
+7. Iniciar o processo de restauração.
+8. Aguardar a conclusão do procedimento.
+9. Reiniciar o computador.
+10. Confirmar que o Windows inicia normalmente.
+11. Verificar se todos os drivers e programas estão funcionando corretamente.
 
 Caso a imagem esteja atualizada, nenhuma configuração adicional deverá ser necessária.
 
@@ -194,7 +197,7 @@ Caso a imagem esteja atualizada, nenhuma configuração adicional deverá ser ne
 
 # Estado Atual do Projeto
 
-Até o momento, o projeto encontra-se na seguinte situação:
+Atualmente o projeto encontra-se na seguinte situação:
 
 * Estrutura de pendrives organizada.
 * Máquina modelo configurada.
@@ -213,21 +216,45 @@ Até o momento, o projeto encontra-se na seguinte situação:
 
 Esta documentação será expandida conforme o projeto evoluir.
 
-Entre os próximos tópicos previstos estão:
+Os próximos tópicos previstos incluem:
 
 * documentação do software de gerenciamento remoto;
 * documentação de novos modelos de computadores;
 * organização do inventário de equipamentos;
 * manutenção das imagens do Clonezilla;
-* procedimentos de atualização das imagens;
-* organização dos backups;
+* atualização periódica das imagens padrão;
 * procedimentos de recuperação em caso de falhas;
-* configuração da infraestrutura de rede para gerenciamento remoto.
+* documentação da infraestrutura de rede;
+* procedimentos para atualização e manutenção do software de gerenciamento remoto.
 
 ---
 
 # Observações
 
-Sempre que uma imagem for modificada ou atualizada, esta documentação deve ser revisada para garantir que os procedimentos reflitam o estado atual do projeto.
+Sempre que uma imagem for modificada ou atualizada, esta documentação deverá ser revisada para refletir corretamente o estado atual do projeto.
 
-O objetivo deste documento é garantir que qualquer integrante da equipe consiga compreender a estrutura do ambiente e realizar manutenções ou restaurações de forma segura, independentemente de quem tenha criado a imagem originalmente.
+O objetivo deste documento é garantir que qualquer integrante consiga compreender toda a estrutura do ambiente e realizar manutenções ou restaurações de forma segura e padronizada.
+
+---
+
+# Créditos
+
+## Documentação
+
+Esta documentação foi elaborada por:
+
+* **Bruno Pereira Stum**
+
+Responsável pela organização, manutenção e atualização desta documentação técnica.
+
+## Equipe do Projeto
+
+A preparação das máquinas, formatação, padronização dos computadores, criação das imagens, testes e implantação da infraestrutura foram realizadas pelos alunos:
+
+* **Bruno Pereira Stum**
+* **João Henrique Pinheiro Daudt**
+* **Lorenzo Nedel Mello**
+
+O projeto foi desenvolvido como parte das atividades de infraestrutura e gerenciamento de computadores da Escola Estadual de Ensino Médio Fernando Ferrari.
+
+Este documento deverá ser atualizado sempre que novos procedimentos, equipamentos ou funcionalidades forem adicionados ao projeto, garantindo que futuras equipes possam dar continuidade ao trabalho sem perda de informações.
