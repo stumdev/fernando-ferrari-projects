@@ -255,6 +255,9 @@ A preparação das máquinas, formatação, padronização dos computadores, cri
 * **João Henrique Pinheiro Daudt**
 * **Lorenzo Nedel Mello**
 
-O projeto foi desenvolvido como parte das atividades de infraestrutura e gerenciamento de computadores da Escola Estadual de Ensino Médio Fernando Ferrari.
+Todos os integrantes fazem parte do **1º ano do Ensino Médio**, **Turma 114**, da **Escola Estadual de Ensino Médio Fernando Ferrari**.
 
-Este documento deverá ser atualizado sempre que novos procedimentos, equipamentos ou funcionalidades forem adicionados ao projeto, garantindo que futuras equipes possam dar continuidade ao trabalho sem perda de informações.
+Este projeto tem como objetivo aprimorar a infraestrutura dos computadores da instituição e servir como base para o desenvolvimento de um sistema de gerenciamento remoto das máquinas utilizadas pela escola.
+
+Esta documentação deverá ser mantida atualizada conforme o projeto evoluir, garantindo que futuras equipes possam compreender os procedimentos adotados e dar continuidade ao trabalho desenvolvido.
+
