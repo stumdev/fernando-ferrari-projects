@@ -1,4 +1,16 @@
-# Documentação do Projeto de Padronização e Gerenciamento de Computadores
+# Padronização e Gerenciamento de Computadores
+
+> Documentação dos processos de preparação, padronização, clonagem e restauração dos computadores da Escola Estadual de Ensino Médio Fernando Ferrari.
+
+| Campo | Informação |
+| --- | --- |
+| Projeto | Padronização e gerenciamento de computadores |
+| Instituição | Escola Estadual de Ensino Médio Fernando Ferrari |
+| Equipamentos documentados | HP 240 G7 |
+| Tecnologias citadas | Windows, Clonezilla, Ninite e DriverHub |
+| Organização do repositório | [stumdev](https://github.com/stumdev) |
+| Colaboradores | Bruno Pereira Stum, João Henrique Pinheiro Daudt e Lorenzo Nedel Mello |
+| Licença | Não especificada |
 
 ## Sumário
 
@@ -18,7 +30,7 @@
 
 ---
 
-# Visão Geral
+## Visão Geral
 
 Este repositório tem como finalidade documentar todos os procedimentos relacionados à preparação, padronização, clonagem e restauração dos computadores utilizados no projeto desenvolvido na Escola Estadual de Ensino Médio Fernando Ferrari.
 
@@ -35,7 +47,7 @@ Esta documentação deve ser mantida atualizada para que qualquer integrante con
 
 ---
 
-# Objetivo
+## Objetivo
 
 O processo foi criado para reduzir o tempo gasto com formatações e garantir que todos os computadores de um mesmo modelo permaneçam exatamente iguais.
 
@@ -53,7 +65,7 @@ Entre as vantagens desse método estão:
 
 ---
 
-# Estrutura dos Pendrives
+## Estrutura dos Pendrives
 
 Atualmente a equipe possui dez pendrives destinados às seguintes funções:
 
@@ -74,7 +86,7 @@ Cada pendrive possui uma finalidade específica e deve permanecer organizado par
 
 ---
 
-# Ambiente Atual
+## Ambiente Atual
 
 Até o momento, o procedimento foi aplicado em três notebooks do seguinte modelo:
 
@@ -86,19 +98,19 @@ Caso novos computadores com hardware diferente sejam incorporados ao projeto, se
 
 ---
 
-# Preparação da Máquina Modelo
+## Preparação da Máquina Modelo
 
 Foi escolhido um notebook HP 240 G7 para servir como máquina de referência.
 
 Todo o procedimento descrito abaixo foi executado apenas nessa máquina.
 
-## 1. Instalação do sistema operacional
+### 1. Instalação do sistema operacional
 
 Foi realizada uma instalação limpa do Windows 10 utilizando um dos pendrives de instalação disponíveis.
 
 ---
 
-## 2. Configuração inicial
+### 2. Configuração inicial
 
 Após a instalação do Windows, foram realizadas as configurações iniciais necessárias para utilização da máquina.
 
@@ -106,7 +118,7 @@ Atualmente o equipamento permanece sem senha de acesso, facilitando o processo d
 
 ---
 
-## 3. Instalação dos programas
+### 3. Instalação dos programas
 
 Os softwares utilizados pela escola foram instalados utilizando o Ninite.
 
@@ -114,7 +126,7 @@ Essa ferramenta permite instalar diversos programas automaticamente, reduzindo o
 
 ---
 
-## 4. Instalação dos drivers
+### 4. Instalação dos drivers
 
 Após a instalação dos programas, todos os drivers foram instalados utilizando o DriverHub.
 
@@ -122,7 +134,7 @@ Antes de prosseguir, foi verificado que nenhum dispositivo permanecia com driver
 
 ---
 
-## 5. Limpeza e otimização
+### 5. Limpeza e otimização
 
 Após confirmar que o sistema estava totalmente funcional, foi executado o Windows10Debloater.
 
@@ -132,7 +144,7 @@ Essa etapa deve ser realizada apenas após confirmar que todos os drivers e prog
 
 ---
 
-# Criação da Imagem
+## Criação da Imagem
 
 Após concluir toda a configuração da máquina modelo, foi utilizado o Clonezilla para criar uma imagem completa do disco.
 
@@ -144,7 +156,7 @@ Sempre que forem realizadas alterações importantes na configuração da máqui
 
 ---
 
-# Backup das Imagens
+## Backup das Imagens
 
 Como medida de segurança, todas as imagens armazenadas no pendrive de armazenamento também possuem uma cópia de segurança no servidor da escola.
 
@@ -156,7 +168,7 @@ Antes de iniciar qualquer processo de criação de uma nova imagem, sempre verif
 
 ---
 
-# Implantação nas Demais Máquinas
+## Implantação nas Demais Máquinas
 
 Após a criação da imagem, os outros dois notebooks HP 240 G7 foram restaurados utilizando o Clonezilla.
 
@@ -175,7 +187,7 @@ Esse procedimento garante que todos os computadores permaneçam padronizados e r
 
 ---
 
-# Procedimento de Restauração
+## Procedimento de Restauração
 
 Sempre que um notebook HP 240 G7 precisar ser restaurado, seguir o procedimento abaixo.
 
@@ -195,7 +207,7 @@ Caso a imagem esteja atualizada, nenhuma configuração adicional deverá ser ne
 
 ---
 
-# Estado Atual do Projeto
+## Estado Atual do Projeto
 
 Atualmente o projeto encontra-se na seguinte situação:
 
@@ -212,7 +224,7 @@ Atualmente o projeto encontra-se na seguinte situação:
 
 ---
 
-# Próximos Passos
+## Próximos Passos
 
 Esta documentação será expandida conforme o projeto evoluir.
 
@@ -229,7 +241,7 @@ Os próximos tópicos previstos incluem:
 
 ---
 
-# Observações
+## Observações
 
 Sempre que uma imagem for modificada ou atualizada, esta documentação deverá ser revisada para refletir corretamente o estado atual do projeto.
 
@@ -237,9 +249,9 @@ O objetivo deste documento é garantir que qualquer integrante consiga compreend
 
 ---
 
-# Créditos
+## Créditos
 
-## Documentação
+### Documentação
 
 Esta documentação foi elaborada por:
 
@@ -247,7 +259,7 @@ Esta documentação foi elaborada por:
 
 Responsável pela organização, manutenção e atualização desta documentação técnica.
 
-## Equipe do Projeto
+### Equipe do Projeto
 
 A preparação das máquinas, formatação, padronização dos computadores, criação das imagens, testes e implantação da infraestrutura foram realizadas pelos alunos:
 
@@ -260,4 +272,3 @@ Todos os integrantes fazem parte do **1º ano do Ensino Médio**, **Turma 114**,
 Este projeto tem como objetivo aprimorar a infraestrutura dos computadores da instituição e servir como base para o desenvolvimento de um sistema de gerenciamento remoto das máquinas utilizadas pela escola.
 
 Esta documentação deverá ser mantida atualizada conforme o projeto evoluir, garantindo que futuras equipes possam compreender os procedimentos adotados e dar continuidade ao trabalho desenvolvido.
-
